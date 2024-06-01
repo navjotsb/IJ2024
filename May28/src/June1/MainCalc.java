@@ -4,36 +4,38 @@ import java.util.Scanner;
 
 public class MainCalc {
     public static void main(String[] args) {
-
+      String x;
+        do {
        Task task= new Task();
        int input=Task.perform();
         switch (input)
         {
             case 1:
             {
-                Sum sum= new Sum();
-                Sum.add();
+                Task.add();
                 break;
             }
             case 2:
             {
-                Differnece differnece=new Differnece();
-                Differnece.sub();
+                Task.sub();
                 break;
             }
             case 3:
             {
-                Multiplication multiplication = new Multiplication();
-                Multiplication.multi();
+                Task.multi();
                 break;
             }
             case 4:
             {
-                Divison divison= new Divison();
-                Divison.divide();
+                Task.divide();
                 break;
             }
 
         }
+       x =Task.conti();
+            System.out.println(x);
+
+    } while(x.equalsIgnoreCase("y"));
     }
 }
+

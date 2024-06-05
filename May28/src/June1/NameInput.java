@@ -1,12 +1,11 @@
 package June1;
 
-import java.util.Scanner;
-
 public class NameInput {
 
-    static void input(String name)
+    static String input(String name)
     {
         System.out.println("Your name is " + name);
+        return name;
     }
     static void input(String name, String email)
     {

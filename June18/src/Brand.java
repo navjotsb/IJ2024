@@ -9,6 +9,7 @@ public class Brand {
         this.colour = colour;
     }
 
+
     @Override
     public String toString() {
         return "Brand{" +

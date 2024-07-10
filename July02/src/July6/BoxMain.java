@@ -4,7 +4,7 @@ public class BoxMain {
     public static void main(String[] args) {
 
 
-         Box<String,String> box = new Box<String, String>("Iphone","Ipad");
+         Box<Integer,String> box = new Box<Integer, String>(101,"Ipad");
         System.out.println(box.item1 + " " + box.item2);
 
     }

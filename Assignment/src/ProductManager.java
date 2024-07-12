@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+
 public class ProductManager {
     private ArrayList<Product> productList = new ArrayList<>();
 
@@ -82,6 +83,12 @@ public class ProductManager {
     }
 
     public void showProduct() {
+        try {
+            if (productList.isEmpty()) {
+                throw new ProductNotFoundException("Product Inventory is 0");
+            }  }catch (ProductNotFoundException e) {
+                System.out.println("An error occurred: " + e.getMessage());
+            }
         System.out.println(productList);
     }
 

@@ -15,9 +15,11 @@ public class ProductMain {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Welcome to Inventory Management System");
+
         while (exit != true) {
 
-            System.out.println("Welcome to Inventory Management System");
+
             System.out.println("Press 1 to add a product");
             System.out.println("Press 2 to remove a product");
             System.out.println("Press 3 to update a product");
@@ -84,6 +86,13 @@ public class ProductMain {
                     break;
 
                 case 3:
+
+
+                case 4:
+
+
+                case 5:   productManager.showProduct();
+                            break;
 
             }
         }

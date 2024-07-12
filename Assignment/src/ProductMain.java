@@ -43,14 +43,20 @@ public class ProductMain {
 
                     System.out.println("Enter the quantity of the product");
                     quantity = scanner.nextInt();
+                    scanner.nextLine();
 
 
                     productManager.addProduct(new Product(id, productName, price, quantity));
                     productManager.showProduct();
 
                     System.out.println("Press y to exit or any key to continue ");
+                    cont = scanner.nextLine();
+                    if(cont.equals("y"))
+                    {
+                        exit = true;
 
-                    return;
+                    }
+                    break;
 
                 case 2:
                     System.out.println("Enter the ID of the product to remove");
@@ -67,6 +73,18 @@ public class ProductMain {
 
 
                     productManager.removeProduct(id);
+                    productManager.showProduct();
+                    System.out.println("Press y to exit or any key to continue ");
+                    cont = scanner.nextLine();
+                    if(cont.equals("y"))
+                    {
+                        exit = true;
+
+                    }
+                    break;
+
+                case 3:
+
             }
         }
     }

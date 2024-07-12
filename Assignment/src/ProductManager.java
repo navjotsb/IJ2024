@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ProductManager {
     private ArrayList<Product> productList = new ArrayList<>();
@@ -26,21 +27,31 @@ public class ProductManager {
     public void removeProduct(String id) {
         try {
             if (productList.isEmpty()) {
-                throw new ProductNotFoundException("Product Inventory is 0");
+                throw new ProductNotFoundException("Product Inventory is empty");
             }
-            else {
-                for (Product product : productList) {
 
-                    if (product.getId().equals(id)) {
-                        productList.remove(product);
-                        System.out.println("Product Removed");
-                    }
+            Iterator<Product> iterator = productList.iterator();
+            boolean found = false;
+
+            while (iterator.hasNext()) {
+                Product product = iterator.next();
+                if (product.getId().equals(id)) {
+                    iterator.remove();
+                    found = true;
+                    System.out.println("Product removed.");
+                    break; // Exit the loop once the product is removed
                 }
             }
-        } catch (ProductNotFoundException e) {
-                System.out.println("An error occurred: " + e.getMessage());
+
+            if (!found) {
+                throw new ProductNotFoundException("Product with ID " + id + " not found.");
             }
+
+        } catch (ProductNotFoundException e) {
+            System.out.println("An error occurred: " + e.getMessage());
         }
+    }
+
 
       /*  try {
             if (productList.isEmpty()) {

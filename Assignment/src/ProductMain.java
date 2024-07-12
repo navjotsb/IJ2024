@@ -92,7 +92,30 @@ public class ProductMain {
 
 
                 case 5:   productManager.showProduct();
-                            break;
+                    System.out.println("Press y to exit or any key to continue ");
+                    cont = scanner.nextLine();
+                    if(cont.equals("y"))
+                    {
+                        exit = true;
+
+                    }
+                    break;
+
+
+                case 6:
+                    System.out.println("System is exited");
+                    return;
+
+                default:
+                    System.out.println("Invalid Input");
+                    System.out.println("Press y to exit or any key to continue ");
+                    cont = scanner.nextLine();
+                    if(cont.equals("y"))
+                    {
+                        exit = true;
+
+                    }
+                    break;
 
             }
         }

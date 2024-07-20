@@ -48,7 +48,7 @@ public class SetDemo {
 
 
         System.out.println("LinkedHashSet output: " + set2);
-        System.out.println("LinkedHashSet Output is in sequence as it is entered with no duplicates and 1 null is allowed");
+        System.out.println("LinkedHashSet Output is in INSERTION ORDER as it is entered with no duplicates and 1 null is allowed");
 
 
 

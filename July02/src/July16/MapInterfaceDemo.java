@@ -26,5 +26,6 @@ public class MapInterfaceDemo {
 
         Collection<Integer> values = map.values();
         System.out.println("Set of values in the map: " + values);
+
     }
 }

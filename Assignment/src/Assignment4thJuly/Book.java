@@ -40,12 +40,22 @@ public class Book {
             else
             {
                 stock = stock - change;
-                System.out.println("Updated Stock for " + title + "is " + stock);
+                System.out.println("Updated Stock for " + title + " is " + stock);
             }
 
         } catch (InsufficientStockException e)
         {
             System.out.println("An error Occurred " + e.getMessage());
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", price=" + price +
+                ", stock=" + stock +
+                '}';
     }
 }

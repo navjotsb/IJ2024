@@ -6,7 +6,7 @@ public class BookMain {
         bookStore.addBook(new Book("Book One", "Author One", 29.99, 10));
         bookStore.addBook(new Book("Book Two", "Author Two", 19.99, 5));
 
-        bookStore.purchaseBook("Book One", 12, true);
+        bookStore.purchaseBook("Book One", 1, true);
 
 
     }

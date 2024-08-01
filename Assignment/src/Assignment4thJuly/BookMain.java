@@ -1,6 +1,6 @@
 package Assignment4thJuly;
 
-public class BookMain {
+public abstract class BookMain {
     public static void main(String[] args) {
         BookStore bookStore = new BookStore("Nav Books");
         bookStore.addBook(new Book("Book One", "Author One", 29.99, 10));

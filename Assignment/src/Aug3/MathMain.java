@@ -1,9 +1,11 @@
 package Aug3;
 
+import java.util.function.Predicate;
+
 public class MathMain {
-  public static void mathcheck( int a, IEvenChecker check )
+    public static void mathcheck(int a, Predicate<Integer> check )
     {
-        if(check.checkEven(a))
+        if(check.test(a))
         {
             System.out.println("No is Even");
         }

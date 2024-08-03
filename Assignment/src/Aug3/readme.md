@@ -10,3 +10,19 @@ use checkEven method to check the given integer is even -> print "Number is even
 else print " No is odd"
 
 call mathCheck method with 34 and respective IEvenCheck lambda
+
+
+Name checker
+
+no more static method
+make a method who accepts 1 string name and predicate 
+check name
+if it is 4 or more char print name is approved
+else print name is invalid
+
+
+Name Enhancer
+
+make a funcInterface
+
+nake a method with mane and

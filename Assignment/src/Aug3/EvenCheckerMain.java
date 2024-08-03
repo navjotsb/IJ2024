@@ -1,12 +1,14 @@
 package Aug3;
 
+import java.util.function.Predicate;
+
 public class EvenCheckerMain {
 
     public static void main(String[] args) {
-        IEvenChecker check = a -> a%2==0;
+        Predicate<Integer> check = a -> a%2==0;
 
-        boolean isEven = check.checkEven(57);
+        boolean isEven = check.test(57);
         System.out.println(isEven);
-        MathMain.mathcheck(34, a -> a%2==0);
+        MathMain.mathcheck(34, a -> a%2==0 );
     }
 }

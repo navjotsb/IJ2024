@@ -10,7 +10,5 @@ public class EnchancerMain {
         enchanceMETHOD enchanceMETHOD = new enchanceMETHOD();
 
         System.out.println(enchanceMETHOD.enchance("Navjot", nameEnhancer));
-
-
     }
 }

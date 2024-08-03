@@ -7,6 +7,6 @@ public class LambdaEvenMain{
         Ifun checkEven = (a) -> a%2 == 0;
 
         System.out.println(checkEven.check(57));
-        cw
+        c
     }
 }

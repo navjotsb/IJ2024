@@ -26,3 +26,6 @@ Name Enhancer
 make a funcInterface
 
 nake a method with mane and
+
+//Practice on these Pregiven function interface name
+BiFunction, Function, Consumer, Supplier, BiConsumer and Predicate

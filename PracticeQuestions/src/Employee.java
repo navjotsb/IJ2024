@@ -1,4 +1,5 @@
 public class Employee {
+      private int sal;
 
     public void work()
     {

@@ -10,4 +10,4 @@ public class Calculate {
         return Iadd.add(a, b);
     }
 }
-}
+

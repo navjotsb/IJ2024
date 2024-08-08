@@ -74,6 +74,7 @@ public class SimpleCalculator {
                 default:
                     System.out.println("Invalid input, Please enter the correct input");
                     sleep(2000);
+                    a
             }
         }
 

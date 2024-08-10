@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="StreamApiAug06" />
         <module name="Projects" />
+        <module name="Aug10Streams" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

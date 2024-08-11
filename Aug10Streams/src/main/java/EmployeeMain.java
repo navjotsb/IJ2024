@@ -21,7 +21,7 @@ public class EmployeeMain {
         eplist.add(employee2);
         eplist.add(employee3);
         eplist.add(employee4);
-
+ b
         Stream<Employee> stprocess = eplist.stream();
         Stream<Employee> stprocess1 = eplist.stream();
         Stream<Employee> stprocess2 = eplist.stream();

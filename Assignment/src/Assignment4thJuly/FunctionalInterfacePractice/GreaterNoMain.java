@@ -1,9 +1,6 @@
 package Assignment4thJuly.FunctionalInterfacePractice;
 
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class GreaterNoMain {
 
@@ -20,6 +17,8 @@ public class GreaterNoMain {
         upper.accept("navjot");
         BiFunction<Double,Double,Double> addCheck = (a,b)-> a+b;
         System.out.println("apply BiFunction: " + addCheck.apply(10.0, 5.0));
+        Supplier<Double> randomNumberSupplier = () -> Math.random();
+        System.out.println("get Supplier: " + randomNumberSupplier.get());
 
     }
 }

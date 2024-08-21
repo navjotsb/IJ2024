@@ -27,6 +27,6 @@ public class GreaterNoMain {
 
         Supplier<Double> randomNumberSupplier = () -> Math.random();
         System.out.println("get Supplier: " + randomNumberSupplier.get());
-a
+
     }
 }
